@@ -1,6 +1,9 @@
 import {Injectable} from "@angular/core";
 import {User} from "./user.model";
-import {Http} from "@angular/http";
+import {Headers, Http, RequestOptions} from "@angular/http";
+import {Candidate} from "../candidates/shared/candidate.model";
+import {error} from "util";
+import {Observable} from "rxjs/Observable";
 
 @Injectable()
 export class AuthService {
@@ -12,14 +15,17 @@ export class AuthService {
 
     loginUser(userName: string, password: string) {
 
-        this.http.get("http://localhost:9090/candidate/auth?email=" + userName + "&pass=" + password).subscribe()
+        let headers = new Headers({'Content-type':'applications/json'});
+        let options = new RequestOptions({headers: headers});
+        let loginInfo = {email: userName, pass: password };
 
-        this.currentUser = {
-            id: 1,
-            userName: userName,
-            firstName: 'John',
-            lastName: 'Lopes'
-        }
+        this.http.post('http://localhost:9090/candidate/auth',JSON.stringify(loginInfo), options).do(resp=>{
+            if(resp){
+                this.currentUser = <User>resp.json().user;
+            }
+        }).catch(error => {
+            return Observable.of(false);
+        });
     }
 
     isAuthenticated() {
