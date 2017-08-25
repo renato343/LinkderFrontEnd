@@ -1,0 +1,7 @@
+export * from './create-candidate.component'
+export * from './candidates-thumb.component'
+export * from './candidate-list-resolver'
+export * from './candidates-list.component'
+export * from './shared/index'
+export * from './candidates-details/index'
+export * from './candidate.resolver'
