@@ -1,8 +1,6 @@
 import {Injectable} from "@angular/core";
 import {User} from "./user.model";
 import {Headers, Http, RequestOptions} from "@angular/http";
-import {Candidate} from "../candidates/shared/candidate.model";
-import {error} from "util";
 import {Observable} from "rxjs/Observable";
 
 @Injectable()
@@ -15,13 +13,14 @@ export class AuthService {
 
     loginUser(userName: string, password: string) {
 
-        let headers = new Headers({'Content-type':'applications/json'});
+        let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});
-        let loginInfo = {email: userName, pass: password };
+        let user = {email: userName, password: password};
 
-        this.http.post('http://localhost:9090/candidate/auth',JSON.stringify(loginInfo), options).do(resp=>{
-            if(resp){
-                this.currentUser = <User>resp.json().user;
+        return this.http.post('http://localhost:9090/candidate/auth', JSON.stringify(user), options).do(resp => {
+
+            if (resp) {
+                this.currentUser = <User>resp.json();
             }
         }).catch(error => {
             return Observable.of(false);
@@ -30,5 +29,9 @@ export class AuthService {
 
     isAuthenticated() {
         return !!this.currentUser;
+    }
+
+    checkAuthenticationStatus() {
+
     }
 }

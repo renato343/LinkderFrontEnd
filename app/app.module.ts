@@ -16,12 +16,16 @@ import {Error404Component} from "./errors/404.component";
 import {HttpModule} from "@angular/http";
 import {AuthService} from "./user/auth.service";
 import {CandidateResolver} from "./candidates/candidate.resolver";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
     imports: [
         BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
         RouterModule.forRoot(appRoutes, {useHash: true}),
         HttpModule,
+
     ],
 
     declarations: [

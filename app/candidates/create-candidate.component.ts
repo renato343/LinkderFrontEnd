@@ -1,27 +1,65 @@
-import {Component} from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
+import {CandidateService} from "./shared/candidate-service";
+import {Language} from "./shared/language.model";
+import {Framework} from "./shared/framework.model";
 
 @Component({
-    template: `
-        <h1>New Candidate</h1>
-        <hr>
-        <div class="col-md-6">
-            <h3> [Create Event form will go here]</h3>
-            <br/>
-            <br/>
-            <button type="submit" class="btn btn-primary">Save</button>
-            <button type="submit" class="btn btn-default" (click)="cancel()">Cancel</button>
-        </div>
-    
-    `
+    templateUrl: 'app/candidates/create-candidate.component.html',
+    styles: [`
+        em {
+            float: right;
+            color: #E05C65;
+            padding-left: 10px
+        }
+
+        .error input {
+            background-color: #E3C3C5;
+        }
+
+        .error ::-webkit-input-placeholder {
+            color: #999;
+        }
+
+        .error ::-moz-placeholder {
+            color: #999
+        }
+
+        .error :-moz-placeholder {
+            color: #999
+        }
+
+        .error :-ms-input-placeholder {
+            color: #999
+        }
+    `]
 })
-export class CreateCandidateComponent{
+export class CreateCandidateComponent implements OnInit{
 
     isDirty: boolean = true;
+    languages:Language[];
+    frameworks:Framework[];
 
-    constructor(private router:Router){}
+    constructor(private router: Router, private candidateService: CandidateService) {
+    }
 
-    cancel(){
+    ngOnInit(){
+
+        this.candidateService.getLanguages().subscribe(resp =>{
+            this.languages = resp;
+        })
+
+        this.candidateService.getFrameworks().subscribe(resp =>{
+            this.frameworks = resp;
+        })
+    }
+
+    saveCandidate(formvalues) {
+
+        this.candidateService.registerCandidate(formvalues);
+    }
+
+    cancel() {
         this.router.navigate(['/candidates'])
     }
 

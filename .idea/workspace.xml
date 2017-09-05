@@ -2,42 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fc244a5-7b8f-4768-9415-e09c393f5671" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ng2-fundamentals.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/typescript-compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/LinkDer-app.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/app.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/candidate-list-resolver.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/candidate.resolver.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/candidates-details/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/candidates-list.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/candidates-thumb.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/create-candidate.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/shared/candidate-service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/shared/candidate.model.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/shared/index.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/errors/404.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/main.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/nav/navbar.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/nav/navbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/routes.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/user/login.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/user/login.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/user/profile.component.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/user/profile.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/user/user.module.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/user/user.routes.ts" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/dummy.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/readme.MD" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/create-candidate.component.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/shared/framework.model.ts" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/candidates/shared/language.model.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/LinkDer-app.component.ts" afterPath="$PROJECT_DIR$/app/LinkDer-app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.module.ts" afterPath="$PROJECT_DIR$/app/app.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/candidates/candidates-list.component.ts" afterPath="$PROJECT_DIR$/app/candidates/candidates-list.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/candidates/create-candidate.component.ts" afterPath="$PROJECT_DIR$/app/candidates/create-candidate.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/candidates/shared/candidate-service.ts" afterPath="$PROJECT_DIR$/app/candidates/shared/candidate-service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/candidates/shared/candidate.model.ts" afterPath="$PROJECT_DIR$/app/candidates/shared/candidate.model.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/nav/navbar.html" afterPath="$PROJECT_DIR$/app/nav/navbar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/user/auth.service.ts" afterPath="$PROJECT_DIR$/app/user/auth.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/user/login.component.html" afterPath="$PROJECT_DIR$/app/user/login.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/user/login.component.ts" afterPath="$PROJECT_DIR$/app/user/login.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/user/profile.component.ts" afterPath="$PROJECT_DIR$/app/user/profile.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/user/user.model.ts" afterPath="$PROJECT_DIR$/app/user/user.model.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,57 +26,61 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="auth.service.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/user/auth.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.model.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/user/user.model.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="candidate-service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/candidates/shared/candidate-service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="418">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
+                <element signature="n#!!block;n#getCandidates#0;n#CandidateService#0" expanded="false" />
+                <element signature="n#!!block;n#getCandidate#0;n#CandidateService#0" expanded="false" />
+                <element signature="n#!!block;n#getLanguages#0;n#CandidateService#0" expanded="false" />
+                <element signature="n#!!block;n#getFrameworks#0;n#CandidateService#0" expanded="false" />
+                <element signature="n#!!block;n#handleError#0;n#CandidateService#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/user/login.component.ts">
+      <file leaf-file-name="create-candidate.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/candidates/create-candidate.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-              <folding />
+            <state relative-caret-position="594">
+              <caret line="53" column="10" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#345#832#0" expanded="false" />
+                <element signature="n#!!block;n#cancel#0;n#CreateCandidateComponent#0" expanded="false" />
+                <marker date="1504197352392" expanded="true" signature="359:455" ph="{...}" />
+                <marker date="1504197352392" expanded="true" signature="478:528" ph="{...}" />
+                <marker date="1504197352392" expanded="true" signature="573:609" ph="{...}" />
+                <marker date="1504197352392" expanded="true" signature="645:680" ph="{...}" />
+                <marker date="1504197352392" expanded="true" signature="715:750" ph="{...}" />
+                <marker date="1504197352392" expanded="true" signature="790:825" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/user/login.component.html">
+      <file leaf-file-name="create-candidate.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/candidates/create-candidate.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
+            <state relative-caret-position="249">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,7 +92,11 @@
     <findStrings>
       <find>disa</find>
       <find>route</find>
+      <find>newEventForm</find>
     </findStrings>
+    <replaceStrings>
+      <replace>newCandidateForm</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,38 +117,44 @@
         <option value="$PROJECT_DIR$/app/Events-app.component.ts" />
         <option value="$PROJECT_DIR$/app/candidates/candidates-list.component.html" />
         <option value="$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.html" />
-        <option value="$PROJECT_DIR$/app/LinkDer-app.component.ts" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/candidates/candidates-details/candidates-details.component.ts" />
         <option value="$PROJECT_DIR$/app/errors/404.component.ts" />
         <option value="$PROJECT_DIR$/app/candidates/event-route.activator.service.ts" />
         <option value="$PROJECT_DIR$/app/candidates/Candidate-route.activator.service.ts" />
-        <option value="$PROJECT_DIR$/app/candidates/create-candidate.component.ts" />
         <option value="$PROJECT_DIR$/app/shared/candidate-service.ts" />
         <option value="$PROJECT_DIR$/app/shared/index.ts" />
         <option value="$PROJECT_DIR$/app/candidates/shared/index.ts" />
         <option value="$PROJECT_DIR$/app/user/user.routes.ts" />
-        <option value="$PROJECT_DIR$/app/nav/navbar.html" />
         <option value="$PROJECT_DIR$/app/nav/navbar.component.ts" />
-        <option value="$PROJECT_DIR$/app/user/login.component.ts" />
-        <option value="$PROJECT_DIR$/app/user/login.component.html" />
-        <option value="$PROJECT_DIR$/app/user/profile.component.ts" />
         <option value="$PROJECT_DIR$/app/user/profile.component.html" />
         <option value="$PROJECT_DIR$/app/user/user.module.ts" />
-        <option value="$PROJECT_DIR$/app/candidates/shared/candidate.model.ts" />
         <option value="$PROJECT_DIR$/app/candidates/candidates-details/Candidate-route.activator.service.ts" />
         <option value="$PROJECT_DIR$/app/candidates/candidate.resolver.ts" />
         <option value="$PROJECT_DIR$/app/candidates/index.ts" />
         <option value="$PROJECT_DIR$/app/candidates/candidates-details/index.ts" />
-        <option value="$PROJECT_DIR$/app/candidates/candidates-list.component.ts" />
         <option value="$PROJECT_DIR$/app/candidates/candidate-list-resolver.ts" />
-        <option value="$PROJECT_DIR$/app/app.module.ts" />
         <option value="$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.ts" />
         <option value="$PROJECT_DIR$/app/candidates/candidates-thumb.component.ts" />
         <option value="$PROJECT_DIR$/app/routes.ts" />
-        <option value="$PROJECT_DIR$/app/candidates/shared/candidate-service.ts" />
         <option value="$PROJECT_DIR$/app/user/user.model.ts" />
+        <option value="$PROJECT_DIR$/app/nav/navbar.html" />
+        <option value="$PROJECT_DIR$/app/user/login.component.html" />
+        <option value="$PROJECT_DIR$/app/user/login.component.ts" />
+        <option value="$PROJECT_DIR$/app/LinkDer-app.component.ts" />
         <option value="$PROJECT_DIR$/app/user/auth.service.ts" />
+        <option value="$PROJECT_DIR$/app/candidates/candidates-list.component.ts" />
+        <option value="$PROJECT_DIR$/app/user/profile.component.ts" />
+        <option value="$PROJECT_DIR$/app/app.module.ts" />
+        <option value="/AngularJS Fragment (create-candidate.component.html:2991).js" />
+        <option value="$PROJECT_DIR$/app/candidates/shared/candidate.model.ts" />
+        <option value="$PROJECT_DIR$/app/candidates/shared/languages.mode.ts" />
+        <option value="$PROJECT_DIR$/app/candidates/shared/language.mode.ts" />
+        <option value="$PROJECT_DIR$/app/candidates/shared/language.model.ts" />
+        <option value="$PROJECT_DIR$/app/candidates/shared/framework.model.ts" />
+        <option value="$PROJECT_DIR$/app/candidates/create-candidate.component.ts" />
+        <option value="$PROJECT_DIR$/app/candidates/shared/candidate-service.ts" />
+        <option value="$PROJECT_DIR$/app/candidates/create-candidate.component.html" />
       </list>
     </option>
   </component>
@@ -174,10 +168,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -197,8 +191,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,24 +220,10 @@
               <item name="candidates" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="LinkDerFrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LinkDerFrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="nav" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LinkDerFrontEnd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LinkDerFrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,15 +359,21 @@
       <workItem from="1503585305190" duration="119000" />
       <workItem from="1503585655525" duration="297000" />
       <workItem from="1503588187596" duration="61000" />
-      <workItem from="1503588624604" duration="13670000" />
+      <workItem from="1503588624604" duration="13862000" />
+      <workItem from="1503908580792" duration="15874000" />
+      <workItem from="1503994444026" duration="24014000" />
+      <workItem from="1504174015479" duration="10289000" />
+      <workItem from="1504253467531" duration="2909000" />
+      <workItem from="1504513635849" duration="1544000" />
+      <workItem from="1504599523403" duration="1192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54833000" />
+    <option name="totallyTimeSpent" value="110847000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -396,13 +384,12 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30100334" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7008547" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17270789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26626325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -417,6 +404,7 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -491,6 +479,8 @@
         <option value="$PROJECT_DIR$/app/user/user.model.js.map" />
         <option value="$PROJECT_DIR$/app/candidates/candidate.resolver.js.map" />
         <option value="$PROJECT_DIR$/app/candidates/candidate.resolver.js" />
+        <option value="$PROJECT_DIR$/app/candidates/shared/framework.model.js.map" />
+        <option value="$PROJECT_DIR$/app/candidates/shared/framework.model.js" />
       </list>
     </option>
   </component>
@@ -498,76 +488,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="65" lean-forward="false" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
-          <folding>
-            <marker date="1503648587565" expanded="true" signature="252:528" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="252:542" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="328:526" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="404:507" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-thumb.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1503652505629" expanded="true" signature="257:402" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="65" lean-forward="false" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
-          <folding>
-            <marker date="1503648587565" expanded="true" signature="252:528" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="252:542" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="328:526" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="404:507" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-thumb.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1503652505629" expanded="true" signature="257:402" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="26" column="65" lean-forward="false" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="65" />
-          <folding>
-            <marker date="1503648587565" expanded="true" signature="252:528" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="252:542" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="328:526" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="404:507" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/candidates/candidates-thumb.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <marker date="1503652505629" expanded="true" signature="257:402" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,12 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <marker date="1503648587565" expanded="true" signature="252:528" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="252:542" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="328:526" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="404:507" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,17 +615,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/create-candidate.component.ts">
+    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-details/Candidate-route.activator.service.ts" />
+    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="110">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/shared/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-details/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user/user.routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user/user.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-thumb.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/nav/navbar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/nav/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="440">
+          <caret line="29" column="110" lean-forward="false" selection-start-line="29" selection-start-column="110" selection-end-line="29" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/E:/LinkDerFrontEnd/app">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/app</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/app/errors/404.component.ts#Component#9;E:/LinkDerFrontEnd/app/errors/404.component.ts#Error404Component#43;</node>
+            <node x="" y="">$PROJECT_DIR$/app/LinkDer-app.component.js#auth_service_1#806;E:/LinkDerFrontEnd/app/LinkDer-app.component.js#core_1#767;</node>
+            <node x="" y="">$PROJECT_DIR$/app/LinkDer-app.component.ts#AuthService#49;E:/LinkDerFrontEnd/app/LinkDer-app.component.ts#Component#8;E:/LinkDerFrontEnd/app/LinkDer-app.component.ts#LinkDerAppComponent#91;</node>
+            <node x="" y="">Observable;</node>
+            <node x="" y="">$PROJECT_DIR$/app/app.module.ts#AppModule#718;E:/LinkDerFrontEnd/app/app.module.ts#AuthService#609;E:/LinkDerFrontEnd/app/app.module.ts#BrowserModule#48;E:/LinkDerFrontEnd/app/app.module.ts#CandidateDetailsComponent#171;E:/LinkDerFrontEnd/app/app.module.ts#CandidateListResolver#202;E:/LinkDerFrontEnd/app/app.module.ts#CandidateResolver#658;E:/LinkDerFrontEnd/app/app.module.ts#CandidateService#229;E:/LinkDerFrontEnd/app/app.module.ts#CandidatesListComponent#251;E:/LinkDerFrontEnd/app/app.module.ts#CandidatesThumbComponent#280;E:/LinkDerFrontEnd/app/app.module.ts#CreateCandidateComponent#310;E:/LinkDerFrontEnd/app/app.module.ts#Error404Component#509;E:/LinkDerFrontEnd/app/app.module.ts#HttpModule#567;E:/LinkDerFrontEnd/app/app.module.ts#LinkDerAppComponent#105;E:/LinkDerFrontEnd/app/app.module.ts#NavbarComponent#371;E:/LinkDerFrontEnd/app/app.module.ts#NgModule#8;E:/LinkDerFrontEnd/app/app.module.ts#RouterModule#427;E:/LinkDerFrontEnd/app/app.module.ts#appRoutes#473;</node>
+            <node x="" y="">$PROJECT_DIR$/app/user/auth.service.ts#AuthService#183;E:/LinkDerFrontEnd/app/user/auth.service.ts#Headers#85;E:/LinkDerFrontEnd/app/user/auth.service.ts#Http#94;E:/LinkDerFrontEnd/app/user/auth.service.ts#Injectable#8;E:/LinkDerFrontEnd/app/user/auth.service.ts#Observable#146;E:/LinkDerFrontEnd/app/user/auth.service.ts#RequestOptions#100;E:/LinkDerFrontEnd/app/user/auth.service.ts#User#50;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/http/src/base_request_options.d.ts#RequestOptions#205;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/platform-browser/src/browser.d.ts#BrowserModule#771;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.js#candidate_service_1#806;E:/LinkDerFrontEnd/app/candidates/candidates-details/candidate-details.component.js#core_1#767;E:/LinkDerFrontEnd/app/candidates/candidates-details/candidate-details.component.js#router_1#872;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.ts#ActivatedRoute#119;E:/LinkDerFrontEnd/app/candidates/candidates-details/candidate-details.component.ts#Candidate#167;E:/LinkDerFrontEnd/app/candidates/candidates-details/candidate-details.component.ts#CandidateDetailsComponent#213;E:/LinkDerFrontEnd/app/candidates/candidates-details/candidate-details.component.ts#CandidateService#57;E:/LinkDerFrontEnd/app/candidates/candidates-details/candidate-details.component.ts#Component#8;E:/LinkDerFrontEnd/app/candidates/candidates-details/candidate-details.component.ts#OnInit#19;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/candidate-list-resolver.ts#CandidateListResolver#146;E:/LinkDerFrontEnd/app/candidates/candidate-list-resolver.ts#CandidateService#92;E:/LinkDerFrontEnd/app/candidates/candidate-list-resolver.ts#Injectable#9;E:/LinkDerFrontEnd/app/candidates/candidate-list-resolver.ts#Resolve#51;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/shared/candidate-service.js#Rx_1#845;E:/LinkDerFrontEnd/app/candidates/shared/candidate-service.js#core_1#767;E:/LinkDerFrontEnd/app/candidates/shared/candidate-service.js#http_1#806;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/shared/candidate-service.ts#Candidate#132;E:/LinkDerFrontEnd/app/candidates/shared/candidate-service.ts#CandidateService#171;E:/LinkDerFrontEnd/app/candidates/shared/candidate-service.ts#Http#50;E:/LinkDerFrontEnd/app/candidates/shared/candidate-service.ts#Injectable#8;E:/LinkDerFrontEnd/app/candidates/shared/candidate-service.ts#Observable#96;E:/LinkDerFrontEnd/app/candidates/shared/candidate-service.ts#Response#56;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/shared/candidate.model.ts#Candidate#0;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/candidate.resolver.ts#ActivatedRouteSnapshot#51;E:/LinkDerFrontEnd/app/candidates/candidate.resolver.ts#CandidateResolver#170;E:/LinkDerFrontEnd/app/candidates/candidate.resolver.ts#CandidateService#116;E:/LinkDerFrontEnd/app/candidates/candidate.resolver.ts#Injectable#9;E:/LinkDerFrontEnd/app/candidates/candidate.resolver.ts#Resolve#75;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/candidates-list.component.js#core_1#767;E:/LinkDerFrontEnd/app/candidates/candidates-list.component.js#router_1#806;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/candidates-list.component.ts#ActivatedRoute#118;E:/LinkDerFrontEnd/app/candidates/candidates-list.component.ts#Candidate#166;E:/LinkDerFrontEnd/app/candidates/candidates-list.component.ts#CandidateService#57;E:/LinkDerFrontEnd/app/candidates/candidates-list.component.ts#CandidatesListComponent#211;E:/LinkDerFrontEnd/app/candidates/candidates-list.component.ts#Component#8;E:/LinkDerFrontEnd/app/candidates/candidates-list.component.ts#OnInit#19;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/candidates-thumb.component.ts#Candidate#56;E:/LinkDerFrontEnd/app/candidates/candidates-thumb.component.ts#CandidatesThumbComponent#101;E:/LinkDerFrontEnd/app/candidates/candidates-thumb.component.ts#Component#8;E:/LinkDerFrontEnd/app/candidates/candidates-thumb.component.ts#Input#19;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/common/src/common_module.d.ts#CommonModule#0;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/config.d.ts#Routes#7876;</node>
+            <node x="" y="">Component;Injectable;Input;NgModule;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/create-candidate.component.ts#Component#8;E:/LinkDerFrontEnd/app/candidates/create-candidate.component.ts#CreateCandidateComponent#82;E:/LinkDerFrontEnd/app/candidates/create-candidate.component.ts#Router#49;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/forms/src/form_providers.d.ts#FormsModule#0;E:/LinkDerFrontEnd/node_modules/@angular/forms/src/form_providers.d.ts#ReactiveFormsModule#84;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/http/src/headers.d.ts#Headers#203;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/http/src/http.d.ts#Http#263;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/http/http.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/http/src/http_module.d.ts#HttpModule#509;</node>
+            <node x="" y="">$PROJECT_DIR$/app/candidates/shared/index.js#candidate-service.ts#120;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/interfaces.d.ts#Resolve#5791;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/core/src/metadata/lifecycle_hooks.d.ts#OnInit#1407;</node>
+            <node x="" y="">$PROJECT_DIR$/app/user/login.component.ts#AuthService#49;E:/LinkDerFrontEnd/app/user/login.component.ts#Component#8;E:/LinkDerFrontEnd/app/user/login.component.ts#LoginComponent#126;E:/LinkDerFrontEnd/app/user/login.component.ts#Router#93;</node>
+            <node x="" y="">$PROJECT_DIR$/app/main.ts#AppModule#82;E:/LinkDerFrontEnd/app/main.ts#platformBrowserDynamic#8;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/forms/src/model.d.ts#FormControl#10212;E:/LinkDerFrontEnd/node_modules/@angular/forms/src/model.d.ts#FormGroup#14610;</node>
+            <node x="" y="">$PROJECT_DIR$/app/nav/navbar.component.ts#AuthService#49;E:/LinkDerFrontEnd/app/nav/navbar.component.ts#Component#8;E:/LinkDerFrontEnd/app/nav/navbar.component.ts#NavbarComponent#92;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/platform-browser-dynamic/src/platform-browser-dynamic.d.ts#platformBrowserDynamic#249;</node>
+            <node x="" y="">$PROJECT_DIR$/app/user/profile.component.ts#Component#8;E:/LinkDerFrontEnd/app/user/profile.component.ts#FormControl#56;E:/LinkDerFrontEnd/app/user/profile.component.ts#FormGroup#69;E:/LinkDerFrontEnd/app/user/profile.component.ts#OnInit#19;E:/LinkDerFrontEnd/app/user/profile.component.ts#ProfileComponent#104;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/router.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router.d.ts#Router#4478;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router_module.d.ts#RouterModule#1188;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/router/src/router_state.d.ts#ActivatedRoute#1531;E:/LinkDerFrontEnd/node_modules/@angular/router/src/router_state.d.ts#ActivatedRouteSnapshot#3641;</node>
+            <node x="" y="">$PROJECT_DIR$/app/routes.ts#CandidateDetailsComponent#13;E:/LinkDerFrontEnd/app/routes.ts#CandidateListResolver#44;E:/LinkDerFrontEnd/app/routes.ts#CandidateResolver#259;E:/LinkDerFrontEnd/app/routes.ts#CandidatesListComponent#71;E:/LinkDerFrontEnd/app/routes.ts#CreateCandidateComponent#100;E:/LinkDerFrontEnd/app/routes.ts#Error404Component#201;E:/LinkDerFrontEnd/app/routes.ts#Routes#161;E:/LinkDerFrontEnd/app/routes.ts#appRoutes#333;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@angular/http/src/static_response.d.ts#Response#370;</node>
+            <node x="" y="">$PROJECT_DIR$/app/user/user.model.ts#User#0;</node>
+            <node x="" y="">$PROJECT_DIR$/app/user/user.module.ts#CommonModule#48;E:/LinkDerFrontEnd/app/user/user.module.ts#FormsModule#285;E:/LinkDerFrontEnd/app/user/user.module.ts#LoginComponent#235;E:/LinkDerFrontEnd/app/user/user.module.ts#NgModule#8;E:/LinkDerFrontEnd/app/user/user.module.ts#ProfileComponent#181;E:/LinkDerFrontEnd/app/user/user.module.ts#ReactiveFormsModule#298;E:/LinkDerFrontEnd/app/user/user.module.ts#RouterModule#94;E:/LinkDerFrontEnd/app/user/user.module.ts#userRoutes#140;</node>
+            <node x="" y="">$PROJECT_DIR$/app/user/user.routes.ts#LoginComponent#62;E:/LinkDerFrontEnd/app/user/user.routes.ts#ProfileComponent#8;E:/LinkDerFrontEnd/app/user/user.routes.ts#userRoutes#118;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.26149645002730715" x="1525.0" y="1172.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/user/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="88" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/LinkDer-app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -712,207 +778,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/shared/candidate.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-details/Candidate-route.activator.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/shared/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-details/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="41" lean-forward="true" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/LinkDer-app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="5" lean-forward="false" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/user.routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/user/profile.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="242">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidate-list-resolver.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1503648587565" expanded="true" signature="252:528" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="252:542" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="328:526" ph="..." />
-            <marker date="1503648587565" expanded="true" signature="404:507" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-details/candidate-details.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidate.resolver.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/nav/navbar.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <marker date="1503507836825" expanded="true" signature="209:248" ph="{...}" />
-            <marker date="1503507836825" expanded="true" signature="270:313" ph="{...}" />
-            <marker date="1503507836825" expanded="true" signature="350:444" ph="{...}" />
-            <marker date="1503507836825" expanded="true" signature="376:421" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/user.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="409" column="16" lean-forward="false" selection-start-line="409" selection-start-column="16" selection-end-line="409" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-thumb.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <marker date="1503652505629" expanded="true" signature="257:402" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/user/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/candidates/shared/candidate-service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/user/user.model.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/user/auth.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="296">
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/shared/candidate.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/shared/language.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/candidate.resolver.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/candidate-list-resolver.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/candidates-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/shared/framework.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/create-candidate.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="53" column="10" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#345#832#0" expanded="false" />
+            <element signature="n#!!block;n#cancel#0;n#CreateCandidateComponent#0" expanded="false" />
+            <marker date="1504197352392" expanded="true" signature="359:455" ph="{...}" />
+            <marker date="1504197352392" expanded="true" signature="478:528" ph="{...}" />
+            <marker date="1504197352392" expanded="true" signature="573:609" ph="{...}" />
+            <marker date="1504197352392" expanded="true" signature="645:680" ph="{...}" />
+            <marker date="1504197352392" expanded="true" signature="715:750" ph="{...}" />
+            <marker date="1504197352392" expanded="true" signature="790:825" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/shared/candidate-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
+            <element signature="n#!!block;n#getCandidates#0;n#CandidateService#0" expanded="false" />
+            <element signature="n#!!block;n#getCandidate#0;n#CandidateService#0" expanded="false" />
+            <element signature="n#!!block;n#getLanguages#0;n#CandidateService#0" expanded="false" />
+            <element signature="n#!!block;n#getFrameworks#0;n#CandidateService#0" expanded="false" />
+            <element signature="n#!!block;n#handleError#0;n#CandidateService#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/candidates/create-candidate.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

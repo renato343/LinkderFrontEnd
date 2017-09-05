@@ -5,4 +5,6 @@ export interface Candidate{
     name: string,
     password: string,
     motto: string,
+    languages: string[];
+    frameworks: string[];
 }
