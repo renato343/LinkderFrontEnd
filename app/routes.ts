@@ -11,13 +11,11 @@ import {CandidateResolver} from "./candidates/candidate.resolver";
 
 export const appRoutes: Routes = [
 
-    //, canDeactivate: ['canDeactivateCreateCandidate']
-
     {path: 'candidates/new', component: CreateCandidateComponent},
     {path: 'candidates', component: CandidatesListComponent, resolve: {candidates: CandidateListResolver}},
     {path: 'candidates/:id', component: CandidateDetailsComponent, resolve: {candidate: CandidateResolver}},
     {path: '404', component: Error404Component},
-    {path: '', redirectTo: '/candidates', pathMatch: 'full'},
+    {path: '', redirectTo: '/user/login', pathMatch: 'full'},
     {path: 'user', loadChildren: 'app/user/user.module#UserModule'}
 ];
 

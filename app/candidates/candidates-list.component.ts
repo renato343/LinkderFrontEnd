@@ -15,7 +15,6 @@ import {Candidate} from "./shared/candidate.model";
             <hr>
             <div>
                 <button type="button" (click)="match()" class="btn btn-default">MATCH</button>
-                <button type="button" (click)="moreInfo()" class="btn btn-default">MORE INFO</button>
                 <button type="button" (click)="next()" class="btn btn-default">NEXT</button>
             </div>
 

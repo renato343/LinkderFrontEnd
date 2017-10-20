@@ -11,6 +11,7 @@ export class AuthService {
 
     currentUser: User
 
+
     loginUser(userName: string, password: string) {
 
         let headers = new Headers({'Content-type': 'application/json'});
@@ -21,6 +22,7 @@ export class AuthService {
 
             if (resp) {
                 this.currentUser = <User>resp.json();
+
             }
         }).catch(error => {
             return Observable.of(false);
