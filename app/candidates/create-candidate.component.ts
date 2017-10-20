@@ -40,7 +40,8 @@ export class CreateCandidateComponent implements OnInit{
     languages:Language[];
     frameworks:Framework[];
 
-    constructor(private router: Router, private candidateService: CandidateService) {
+    constructor(private router: Router,
+                private candidateService: CandidateService,) {
     }
 
     ngOnInit(){
@@ -56,7 +57,18 @@ export class CreateCandidateComponent implements OnInit{
 
     saveCandidate(formvalues) {
 
-        this.candidateService.registerCandidate(formvalues);
+        this.candidateService.registerCandidate(formvalues).subscribe(resp=>{
+
+            if(resp.text() == "Profile Created"){
+
+                window.alert(resp.text())
+                this.router.navigate(['/candidates'])
+
+            }else{
+                window.alert(resp.text())
+            }
+
+        });
     }
 
     cancel() {

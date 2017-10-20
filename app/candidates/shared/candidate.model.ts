@@ -1,6 +1,6 @@
 export interface Candidate{
 
-    cadet_Id: number;
+    candidate_Id: number;
     email: string,
     name: string,
     password: string,

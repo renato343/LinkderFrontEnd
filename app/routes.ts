@@ -11,7 +11,9 @@ import {CandidateResolver} from "./candidates/candidate.resolver";
 
 export const appRoutes: Routes = [
 
-    {path: 'candidates/new', component: CreateCandidateComponent, canDeactivate: ['canDeactivateCreateCandidate']},
+    //, canDeactivate: ['canDeactivateCreateCandidate']
+
+    {path: 'candidates/new', component: CreateCandidateComponent},
     {path: 'candidates', component: CandidatesListComponent, resolve: {candidates: CandidateListResolver}},
     {path: 'candidates/:id', component: CandidateDetailsComponent, resolve: {candidate: CandidateResolver}},
     {path: '404', component: Error404Component},
