@@ -15,6 +15,7 @@ export class CandidateService {
     getCandidates(): Observable<Candidate[]> {
 
         return this.http.get("http://localhost:9090/candidate/allCandidates").map((response: Response) => {
+            console.log("Candidates in Candidate service " + response.json())
             return <Candidate[]> response.json();
         }).catch(this.handleError);
     }

@@ -11,18 +11,16 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent{
 
-    loginInvalid = false;
-    userNotFound = false;
 
     constructor(private authService:AuthService, private router:Router){}
 
     loginAsCandidate(){
-        this.router.navigate(['candidates'])
+        this.router.navigate(['user/logincandidate'])
     }
 
     loginAsCompany(){
 
-        this.router.navigate(['candidates'])
+        this.router.navigate(['user/logincompany'])
 
     }
 

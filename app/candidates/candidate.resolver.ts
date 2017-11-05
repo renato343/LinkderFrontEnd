@@ -12,6 +12,5 @@ export class CandidateResolver implements Resolve<any>{
     resolve(route: ActivatedRouteSnapshot){
 
         return this.candidateService.getCandidate(route.params['id']);
-
     }
 }
