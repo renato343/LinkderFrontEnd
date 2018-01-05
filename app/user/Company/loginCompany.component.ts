@@ -4,13 +4,13 @@ import {Router} from "@angular/router";
 import {AuthService} from "../auth.service";
 
 @Component({
-    templateUrl: 'app/user/login.component.html',
+    templateUrl: 'app/user/Company/loginCompany.component.html',
     styles: [`
     em{ float:right; color: #E05C65; padding-left: 10px; }
     
     `]
 })
-export class LoginComponent{
+export class LoginComponentCompany{
 
     loginInvalid = false;
     userNotFound = false;

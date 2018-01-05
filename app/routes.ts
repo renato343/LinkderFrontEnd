@@ -2,11 +2,12 @@ import {
     CandidateDetailsComponent,
     CandidateListResolver,
     CandidatesListComponent,
-    CreateCandidateComponent
+
 } from './candidates/index'
 import {Routes} from "@angular/router";
 import {Error404Component} from "./errors/404.component";
 import {CandidateResolver} from "./candidates/candidate.resolver";
+import {CreateCandidateComponent} from "./candidates/create-candidate.component";
 
 
 export const appRoutes: Routes = [
