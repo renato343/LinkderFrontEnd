@@ -5,9 +5,11 @@ import {userRoutes} from './user.routes'
 import {ProfileComponent} from "./profile.component";
 import {LoginComponent} from "./login.component";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import {LoginComponentCandidate} from "./Candidate/loginCandidate.component";
-import {LoginComponentCompany} from "./Company/loginCompany.component";
+import {LoginCompanyComponent} from "./Company/loginCompany.component";
 import {CreateCandidateComponent} from "../candidates/create-candidate.component";
+import {LoginCandidateComponent} from "./Candidate/loginCandidate.component";
+
+
 
 @NgModule({
     imports:[
@@ -19,9 +21,8 @@ import {CreateCandidateComponent} from "../candidates/create-candidate.component
     declarations:[
         ProfileComponent,
         LoginComponent,
-        LoginComponentCandidate,
-        LoginComponentCompany,
-
+        LoginCandidateComponent,
+        LoginCompanyComponent
     ],
     providers: [],
 })

@@ -17,7 +17,13 @@ import {HttpModule} from "@angular/http";
 import {AuthService} from "./user/auth.service";
 import {CandidateResolver} from "./candidates/candidate.resolver";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-
+import {RegisterComponent} from "./register.component";
+import {CreatecompanyComponent} from "./companys/create-company.component";
+import {CompanyService} from "./companys/shared/company-service";
+import {CompanyListComponent} from "./companys/company-list.component";
+import {CompanyListResolver} from "./companys/company-list-resolver";
+import {CompanysThumbComponent} from "./companys/company-thumb.component";
+import {CompanyDetailsComponent} from "./companys/company-details/company-details.component";
 
 @NgModule({
     imports: [
@@ -32,15 +38,24 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     declarations: [
         LinkDerAppComponent,
         CandidatesListComponent,
+        CompanyListComponent,
         CandidatesThumbComponent,
+        CompanysThumbComponent,
         CandidateDetailsComponent,
+        CompanyDetailsComponent,
         NavbarComponent,
         CreateCandidateComponent,
+        CreatecompanyComponent,
         Error404Component,
+        RegisterComponent,
+
     ],
-    providers: [CandidateService,
+    providers: [
+        CandidateService,
+        CompanyService,
         CandidateResolver,
         CandidateListResolver,
+        CompanyListResolver,
         AuthService,
         {
             provide: 'canDeactivateCreateCandidate',
