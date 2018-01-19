@@ -37,10 +37,6 @@ export class CandidatesListComponent implements OnInit {
 
     }
 
-    moreInfo() {
-
-    }
-
     next() {
 
         if (this.index == this.candidates.length-1) {

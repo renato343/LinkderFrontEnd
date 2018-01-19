@@ -15,7 +15,6 @@ export class CompanyService {
     getcompanys(): Observable<Company[]> {
 
         return this.http.get("http://localhost:9090/company/allCompanies").map((response: Response) => {
-            console.log("COmpanys in COmpany Service" + response.json())
             return <Company[]> response.json();
 
         }).catch(this.handleError);
@@ -30,11 +29,8 @@ export class CompanyService {
 
     registercompany(formvalues: any) {
 
-        console.log("in Service " + JSON.stringify(formvalues));
-
         let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});
-
 
         return this.http.post("http://localhost:9090/company/addCompany", JSON.stringify(formvalues), options)
     }

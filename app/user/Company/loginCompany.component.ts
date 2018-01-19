@@ -18,7 +18,7 @@ export class LoginCompanyComponent{
     constructor(private authService:AuthService, private router:Router){}
 
     login(formValues){
-        this.authService.loginUser(formValues.userName, formValues.password).subscribe(resp => {
+        this.authService.loginCompany(formValues.userName, formValues.password).subscribe(resp => {
 
             if(!resp){
                 this.loginInvalid = true;
@@ -30,6 +30,6 @@ export class LoginCompanyComponent{
     }
 
     cancel(){
-        this.router.navigate(['candidates'])
+        this.router.navigate(['/'])
     }
 }

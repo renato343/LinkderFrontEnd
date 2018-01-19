@@ -19,6 +19,7 @@ export class CandidateDetailsComponent implements OnInit{
     ngOnInit() {
 
         this.candidate = this.route.snapshot.data['candidate'];
+        console.log("in candidate details component" + this.candidate);
 
     }
 

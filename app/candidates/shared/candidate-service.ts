@@ -15,7 +15,7 @@ export class CandidateService {
     getCandidates(): Observable<Candidate[]> {
 
         return this.http.get("http://localhost:9090/candidate/allCandidates").map((response: Response) => {
-            console.log("Candidates in Candidate service " + response.json())
+
             return <Candidate[]> response.json();
         }).catch(this.handleError);
     }
@@ -28,8 +28,6 @@ export class CandidateService {
     }
 
     registerCandidate(formvalues: any) {
-
-        console.log("in Service " + JSON.stringify(formvalues));
 
         let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});

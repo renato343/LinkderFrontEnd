@@ -19,18 +19,18 @@ export class LoginCandidateComponent{
     constructor(private authService:AuthService, private router:Router){}
 
     login(formValues){
-        this.authService.loginUser(formValues.userName, formValues.password).subscribe(resp => {
+        this.authService.loginCandidate(formValues.userName, formValues.password).subscribe(resp => {
 
             if(!resp){
                 this.loginInvalid = true;
             }else{
-                this.router.navigate(['candidates'])
+                this.router.navigate(['companies'])
             }
         })
 
     }
 
     cancel(){
-        this.router.navigate(['candidates'])
+        this.router.navigate(['/'])
     }
 }

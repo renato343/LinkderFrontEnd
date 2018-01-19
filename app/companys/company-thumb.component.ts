@@ -5,7 +5,6 @@ import {Company} from "./shared/company.model";
     selector:'company-thumb',
     template:`
         <div [routerLink]="['/companies', company.company_id]" class="well hoverwell thumbnail">
-            <h2>{{company.company_id}}</h2>
             <h2>{{company.name}}</h2> 
             <div>"{{company.motto}}"</div>
         </div>
