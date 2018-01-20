@@ -31,6 +31,7 @@ export class CandidatesListComponent implements OnInit {
 
     ngOnInit() {
         this.candidates = this.route.snapshot.data['candidates'];
+        console.log(this.candidates);
     }
 
     match() {

@@ -7,7 +7,12 @@ import {Candidate} from "./shared/candidate.model";
         <div [routerLink]="['/candidates', candidate.candidate_Id]" class="well hoverwell thumbnail">
             <h2>{{candidate.name}}</h2> 
             <div>"{{candidate.motto}}"</div>
-            <div>"{{candidate.frameworks}}"</div>
+            <br/>
+            LANGUAGES
+            <div *ngFor="let language of candidate.languages">"{{language.name}}"</div>
+            <br/>
+            FRAMEWORKS
+            <div *ngFor="let framework of candidate.frameworks">"{{framework.name}}"</div>
         </div>
     `
 
