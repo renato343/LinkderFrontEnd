@@ -20,7 +20,7 @@ export class AuthService {
         return this.http.post('http://localhost:9090/candidate/auth', JSON.stringify(user), options).do(resp => {
 
             if (resp) {
-                console.log(resp.json());
+
                 this.currentUser = <User>resp.json();
                 this.currentUser.isCandidate = true;
                 this.currentUser.isCompany = false;

@@ -32,6 +32,7 @@ export class CompanyListComponent implements OnInit {
 
     ngOnInit() {
         this.companies = this.route.snapshot.data['companies'];
+        console.log(this.companies);
 
     }
 
