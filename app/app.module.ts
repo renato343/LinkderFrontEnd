@@ -24,6 +24,8 @@ import {CompanyListComponent} from "./companys/company-list.component";
 import {CompanyListResolver} from "./companys/company-list-resolver";
 import {CompanysThumbComponent} from "./companys/company-thumb.component";
 import {CompanyDetailsComponent} from "./companys/company-details/company-details.component";
+import {CompanyResolver} from "./companys/company.resolver";
+import {CollapsibleWellComponent} from "./common/collapsible-well.component";
 
 @NgModule({
     imports: [
@@ -37,25 +39,32 @@ import {CompanyDetailsComponent} from "./companys/company-details/company-detail
 
     declarations: [
         LinkDerAppComponent,
-        CandidatesListComponent,
-        CompanyListComponent,
-        CandidatesThumbComponent,
-        CompanysThumbComponent,
-        CandidateDetailsComponent,
-        CompanyDetailsComponent,
-        NavbarComponent,
+
         CreateCandidateComponent,
+        CandidatesListComponent,
+        CandidatesThumbComponent,
+        CandidateDetailsComponent,
+
         CreatecompanyComponent,
+        CompanyListComponent,
+        CompanysThumbComponent,
+        CompanyDetailsComponent,
+
+        NavbarComponent,
         Error404Component,
         RegisterComponent,
+        CollapsibleWellComponent,
 
     ],
     providers: [
         CandidateService,
-        CompanyService,
         CandidateResolver,
         CandidateListResolver,
+
+        CompanyService,
+        CompanyResolver,
         CompanyListResolver,
+
         AuthService,
         {
             provide: 'canDeactivateCreateCandidate',

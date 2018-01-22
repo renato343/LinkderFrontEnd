@@ -15,14 +15,12 @@ export class LoginComponent{
     constructor(private authService:AuthService, private router:Router){}
 
     loginAsCandidate(){
-
         this.router.navigate(['user/loginCandidate'])
     }
 
     loginAsCompany(){
 
         this.router.navigate(['user/loginCompany'])
-
     }
 
 }

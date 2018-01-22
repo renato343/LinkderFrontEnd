@@ -14,6 +14,8 @@
             <br/>
             <strong>GitHub:</strong><br/>
             <a href="{{company.linkedin}}">{{company.linkedin}}</a>
+            <br>
+            <a *ngFor="let project of company.Projects">{{project.name}} </a>
         </div>
     </div>
 </div>

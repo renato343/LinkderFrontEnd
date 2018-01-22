@@ -18,12 +18,15 @@ import {CompanyDetailsComponent} from "./companys/company-details/company-detail
 export const appRoutes: Routes = [
 
     {path: 'register', component: RegisterComponent},
+
     {path: 'candidates/new', component: CreateCandidateComponent},
-    {path: 'company/new', component: CreatecompanyComponent},
     {path: 'candidates', component: CandidatesListComponent, resolve: {candidates: CandidateListResolver}},
-    {path: 'companies', component: CompanyListComponent, resolve: {companies: CompanyListResolver}},
     {path: 'candidates/:id', component: CandidateDetailsComponent, resolve: {candidate: CandidateResolver}},
+
+    {path: 'company/new', component: CreatecompanyComponent},
+    {path: 'companies', component: CompanyListComponent, resolve: {companies: CompanyListResolver}},
     {path: 'company/:id', component: CompanyDetailsComponent, resolve: {company: CompanyResolver}},
+
     {path: '404', component: Error404Component},
     {path: '', redirectTo: '/user/login', pathMatch: 'full'},
     {path: 'user', loadChildren: 'app/user/user.module#UserModule'},

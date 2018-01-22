@@ -51,6 +51,17 @@ export class AuthService {
         });
     }
 
+    logout(){
+
+        let add = (this.currentUser.isCompany ? 'company' : 'candidate');
+        this.currentUser = undefined;
+
+        let headers = new Headers({'Content-Type': 'application/json'});
+        let options = new RequestOptions({headers: headers});
+
+        return this.http.post('http://localhost:9090/' + add + '/logout', JSON.stringify({}), options);
+    }
+
     isAuthenticated() {
         return !!this.currentUser;
     }

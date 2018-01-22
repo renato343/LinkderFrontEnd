@@ -1,7 +1,7 @@
 <div class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" [routerLink]="['/']">LinkDer</a>
+            <a class="navbar-brand">LinkDer</a>
         </div>
 
         <div class="collapse navbar-collapse">
@@ -22,7 +22,8 @@
 
             <div class="navbar-header navbar-right">
                 <ul class="nav navbar-nav">
-                    <li><a *ngIf="!auth.isAuthenticated()"  [routerLink]="['/register']" routerLinkActive="active">Register</a></li>
+                    <li><a *ngIf="!auth.isAuthenticated()" [routerLink]="['/register']" routerLinkActive="active">Register</a></li>
+                    <li><a *ngIf="auth.isAuthenticated()" class="btn btn-warning" (click)="logout()">LogOut</a></li>
                     <li>
                         <a *ngIf="!auth.isAuthenticated()" [routerLink]="['user/login']">Login</a>
                         <a *ngIf="auth.isAuthenticated()" [routerLink]="['user/profile']">Welcome {{auth.currentUser.name}}</a>

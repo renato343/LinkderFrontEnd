@@ -12,7 +12,7 @@ import {Candidate} from "./shared/candidate.model";
             <div *ngFor="let language of candidate.languages">"{{language.name}}"</div>
             <br/>
             FRAMEWORKS
-            <div *ngFor="let framework of candidate.frameworks">"{{framework.name}}"</div>
+            <li *ngFor="let framework of candidate.frameworks">"{{framework.name}}"</li>
         </div>
     `
 
