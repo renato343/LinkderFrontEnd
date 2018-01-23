@@ -4,16 +4,16 @@ import {Candidate} from "./shared/candidate.model";
 @Component({
     selector:'candidate-thumb',
     template:`
-        <div [routerLink]="['/candidates', candidate.candidate_Id]" class="well hoverwell thumbnail">
-            <h2>{{candidate.name}}</h2> 
-            <div>"{{candidate.motto}}"</div>
-            <br/>
-            LANGUAGES
-            <div *ngFor="let language of candidate.languages">"{{language.name}}"</div>
-            <br/>
-            FRAMEWORKS
-            <li *ngFor="let framework of candidate.frameworks">"{{framework.name}}"</li>
-        </div>
+        <collapsible-well [title] = "candidate.name + ' - ' + candidate.motto">
+            <div>
+             LANGUAGES
+                <li *ngFor="let language of candidate.languages">"{{language.name}}"</li>
+                <br/>
+             FRAMEWORKS
+                <li *ngFor="let framework of candidate.frameworks">"{{framework.name}}"</li>
+            </div>
+       
+        </collapsible-well>
     `
 
 })

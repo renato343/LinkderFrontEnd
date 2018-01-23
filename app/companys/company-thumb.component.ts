@@ -3,13 +3,10 @@ import {Company} from "./shared/company.model";
 
 @Component({
     selector:'company-thumb',
-    template:`
-        <!--<div [routerLink]="['/company', company.company_id]" class="well hoverwell thumbnail">-->
-        <collapsible-well [title] = "company.name">
-            <div>"{{company.motto}}"</div>
-            <li *ngFor="let project of company.projectsList">{{project.name}}</li>
+    template:`        
+        <collapsible-well [title] = "company.name + ' - ' + company.motto">
+            <li *ngFor="let project of company.projectsList" [routerLink]="['/project', project.projectId]">{{project.name}}</li>
         </collapsible-well>
-        <!--</div>-->
     `
 })
 export class CompanysThumbComponent{

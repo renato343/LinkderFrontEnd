@@ -15,7 +15,7 @@ export class CollapsibleWellComponent{
 
     @Input() title:string;
 
-    visible: boolean = true;
+    visible: boolean = false;
 
     toggleContent(){
         this.visible = !this.visible;
