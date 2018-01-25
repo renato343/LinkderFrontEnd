@@ -1,5 +1,5 @@
 import {Component, Input} from "@angular/core";
-import {Candidate} from "./shared/candidate.model";
+import {Candidate} from "../common/model/candidate.model";
 
 @Component({
     selector:'candidate-thumb',

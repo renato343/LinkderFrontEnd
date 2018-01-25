@@ -1,2 +1,2 @@
 export * from './candidate-service'
-export * from './candidate.model'
+export * from '../../common/model/candidate.model'

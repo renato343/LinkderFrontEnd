@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
-import {Language} from "./shared/language.model";
-import {Framework} from "./shared/framework.model";
+import {Language} from "../common/model/language.model";
+import {Framework} from "../common/model/framework.model";
 import {CompanyService} from "./shared/company-service";
 
 @Component({

@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {CandidateService} from "../shared/candidate-service";
 import {ActivatedRoute} from "@angular/router";
-import {Candidate} from "../shared/candidate.model";
+import {Candidate} from "../../common/model/candidate.model";
 
 @Component({
     templateUrl: '/app/candidates/candidates-details/candidate-details.component.html',

@@ -1,6 +1,6 @@
 import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
-import {Candidate} from "./shared/candidate.model";
+import {Candidate} from "../common/model/candidate.model";
 
 @Component({
     template: `

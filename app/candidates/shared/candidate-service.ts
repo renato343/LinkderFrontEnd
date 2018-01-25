@@ -1,9 +1,9 @@
 import {Injectable} from "@angular/core";
 import {Headers, Http, RequestOptions, Response} from "@angular/http";
 import {Observable} from 'rxjs/Rx';
-import {Candidate} from "./candidate.model";
-import {Language} from "./language.model";
-import {Framework} from "./framework.model";
+import {Candidate} from "../../common/model/candidate.model";
+import {Language} from "../../common/model/language.model";
+import {Framework} from "../../common/model/framework.model";
 
 
 @Injectable()

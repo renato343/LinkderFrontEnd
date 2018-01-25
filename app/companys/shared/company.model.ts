@@ -1,4 +1,4 @@
-import {Project} from "./project.model";
+import {Project} from "../../common/model/project.model";
 
 export interface Company{
 

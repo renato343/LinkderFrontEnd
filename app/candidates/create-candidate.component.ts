@@ -1,8 +1,8 @@
 import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import {CandidateService} from "./shared/candidate-service";
-import {Language} from "./shared/language.model";
-import {Framework} from "./shared/framework.model";
+import {Language} from "../common/model/language.model";
+import {Framework} from "../common/model/framework.model";
 
 @Component({
     templateUrl: 'app/candidates/create-candidate.component.html',
