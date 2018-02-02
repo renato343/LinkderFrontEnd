@@ -1,5 +1,5 @@
 import {Component, Input} from "@angular/core";
-import {Company} from "./shared/company.model";
+import {Company} from "../common/model/company.model";
 
 @Component({
     selector:'company-thumb',

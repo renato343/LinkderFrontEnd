@@ -32,15 +32,8 @@ export class CandidateService {
         let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});
 
-
         return this.http.post("http://localhost:9090/candidate/addCandidate", JSON.stringify(formvalues), options)
 
-        // this.http.post("http://localhost:9090/candidate/addCandidate", JSON.stringify(formvalues), options)
-        //     .subscribe(resp => {
-        //
-        //         console.log("this is response in register -------> " + resp.text())
-        //
-        //     })
     }
 
     getLanguages(): Observable<Language[]> {

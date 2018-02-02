@@ -2,10 +2,10 @@ import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import {Language} from "../common/model/language.model";
 import {Framework} from "../common/model/framework.model";
-import {CompanyService} from "./shared/company-service";
+import {CompanyService} from "../companys/shared/company-service";
 
 @Component({
-    templateUrl: 'app/companys/create-company.component.html',
+    templateUrl: 'app/Projects/create-project.component.html',
     styles: [`
         em {
             float: right;
@@ -34,7 +34,7 @@ import {CompanyService} from "./shared/company-service";
         }
     `]
 })
-export class CreateCompanyComponent implements OnInit{
+export class CreateProjectsComponent implements OnInit{
 
     isDirty: boolean = true;
     languages:Language[];
@@ -45,9 +45,17 @@ export class CreateCompanyComponent implements OnInit{
     }
 
     ngOnInit(){
+
+        this.companyService.getLanguages().subscribe(resp =>{
+            this.languages = resp;
+    })
+
+        this.companyService.getFrameworks().subscribe(resp => {
+            this.frameworks = resp;
+        })
     }
 
-    saveCompany(formvalues) {
+    saveProject(formvalues) {
 
         this.companyService.registercompany(formvalues).subscribe(resp=>{
 

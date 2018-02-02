@@ -18,7 +18,7 @@ import {AuthService} from "./user/auth.service";
 import {CandidateResolver} from "./candidates/candidate.resolver";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RegisterComponent} from "./register.component";
-import {CreatecompanyComponent} from "./companys/create-company.component";
+import {CreateCompanyComponent} from "./companys/create-company.component";
 import {CompanyService} from "./companys/shared/company-service";
 import {CompanyListComponent} from "./companys/company-list.component";
 import {CompanyListResolver} from "./companys/company-list-resolver";
@@ -26,6 +26,13 @@ import {CompanysThumbComponent} from "./companys/company-thumb.component";
 import {CompanyDetailsComponent} from "./companys/company-details/company-details.component";
 import {CompanyResolver} from "./companys/company.resolver";
 import {CollapsibleWellComponent} from "./common/collapsible-well.component";
+import {CreateProjectsComponent} from "./Projects/create-projects.component";
+import {ProjectDetailsComponent} from "./Projects/projects-details/project-details.component";
+import {ProjectsListComponent} from "./Projects/projects-list.component";
+import {ProjectsListResolver} from "./Projects/projects-list.resolver";
+import {ProjectResolver} from "./Projects/project.resolver";
+import {ProjectThumbComponent} from "./Projects/project-thumb.component";
+
 
 @NgModule({
     imports: [
@@ -45,10 +52,15 @@ import {CollapsibleWellComponent} from "./common/collapsible-well.component";
         CandidatesThumbComponent,
         CandidateDetailsComponent,
 
-        CreatecompanyComponent,
+        CreateCompanyComponent,
         CompanyListComponent,
         CompanysThumbComponent,
         CompanyDetailsComponent,
+
+        CreateProjectsComponent,
+        ProjectThumbComponent,
+        ProjectDetailsComponent,
+        ProjectsListComponent,
 
         NavbarComponent,
         Error404Component,
@@ -64,6 +76,9 @@ import {CollapsibleWellComponent} from "./common/collapsible-well.component";
         CompanyService,
         CompanyResolver,
         CompanyListResolver,
+
+        ProjectsListResolver,
+        ProjectResolver,
 
         AuthService,
         {

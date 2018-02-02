@@ -1,6 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute} from "@angular/router";
-import {Company} from "../shared/company.model";
+import {Company} from "../../common/model/company.model";
+
 
 
 @Component({

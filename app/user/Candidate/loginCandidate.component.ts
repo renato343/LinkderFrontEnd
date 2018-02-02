@@ -24,7 +24,7 @@ export class LoginCandidateComponent{
             if(!resp){
                 this.loginInvalid = true;
             }else{
-                this.router.navigate(['companies'])
+                this.router.navigate(['projects'])
             }
         })
 

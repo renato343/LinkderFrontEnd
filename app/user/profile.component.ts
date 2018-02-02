@@ -2,6 +2,9 @@ import {Component, OnInit} from '@angular/core'
 import {FormControl, FormGroup} from "@angular/forms";
 import {AuthService} from "./auth.service";
 import {Router} from "@angular/router";
+import {CandidateService} from "../candidates/shared/candidate-service";
+import {Language} from "../common/model/language.model";
+import {Framework} from "../common/model/framework.model";
 
 @Component({
     templateUrl: 'app/user/profile.component.html',
@@ -18,18 +21,34 @@ export class ProfileComponent implements OnInit {
 
     profileForm:FormGroup;
 
-    constructor(private auth:AuthService, private route:Router){
+    languages:Language[];
+    frameworks:Framework[];
 
+    constructor(private auth:AuthService,
+                private route:Router,
+                private candidateService:CandidateService){
     }
 
 
     ngOnInit() {
-        let firstName = new FormControl()
-        let lastName = new FormControl()
+
+        this.candidateService.getLanguages().subscribe(resp =>{
+            this.languages = resp;
+        })
+
+        this.candidateService.getFrameworks().subscribe(resp =>{
+            this.frameworks = resp;
+        })
+
+        let firstName = new FormControl();
+        let lastName = new FormControl();
+        let languages = new FormControl();
+
         this.profileForm = new FormGroup({
             firstName: firstName,
             lastName: lastName,
-        })
+            languages: languages,
+                 })
     }
 
     logout(){

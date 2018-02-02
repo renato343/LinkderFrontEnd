@@ -1,0 +1,44 @@
+<h1 xmlns="http://www.w3.org/1999/html">Create Project</h1>
+<hr>
+<div class="col-md-6">
+
+    <form #newProjectForm="ngForm" (ngSubmit)="saveProject(newProjectForm.value)" autocomplete="off" novalidate>
+
+        <div class="form-group"
+             [ngClass]="{'error': newProjectForm.controls.projectName?.invalid && newProjectForm.controls.projectName?.touched}">
+            <label for="projectName">Project Name:</label>
+            <em *ngIf="newProjectForm.controls.name?.invalid && (newProjectForm.controls.name?.touched)">Required</em>
+            <input (ngModel)="name" name="name" required id="projectName" type="text" class="form-control"
+                   placeholder="Project Name..."/>
+        </div>
+
+        <div class="form-group"
+             [ngClass]="{'error': newProjectForm.controls.motto?.invalid && newProjectForm.controls.motto?.touched}">
+            <label for="motto">Project in One Phrase:</label>
+            <em *ngIf="newProjectForm.controls.motto?.invalid && (newProjectForm.controls.motto?.touched)">Required</em>
+            <input (ngModel)="motto" name="motto" required id="motto" type="text" class="form-control"
+                   placeholder="One Phrase..."/>
+        </div>
+
+        <div class="form-group">
+            <label for="languages">Languages</label>
+            <select (ngModel)="languages"  name="languages" id="languages" multiple class="form-control">
+                <option *ngFor="let lang of languages" [value]="lang">{{lang.name}}</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="frameworks">FrameWorks</label>
+            <select (ngModel)="frameworks" name="frameworks" id="frameworks" multiple class="form-control">
+                <option *ngFor="let framework of frameworks" [value]="framework">{{framework.name}}</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" [disabled]="newProjectForm.invalid" class="btn btn-default" (click)="cancel()">
+            Cancel
+        </button>
+    </form>
+</div>
+
+

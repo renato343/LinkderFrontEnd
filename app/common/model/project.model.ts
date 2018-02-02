@@ -5,6 +5,7 @@ export interface Project {
 
     name: string;
     projectId: string,
+    motto: string,
     languages: Language[];
     frameworks: Framework[];
 

@@ -1,0 +1,52 @@
+<h1 xmlns="http://www.w3.org/1999/html">Create Company</h1>
+<hr>
+<div class="col-md-6">
+
+    <form #newCompanyForm="ngForm" (ngSubmit)="saveCompany(newCompanyForm.value)" autocomplete="off" novalidate>
+
+        <div class="form-group"
+             [ngClass]="{'error': newCompanyForm.controls.companyName?.invalid && newCompanyForm.controls.companyName?.touched}">
+            <label for="companyName">Company Name:</label>
+            <em *ngIf="newCompanyForm.controls.name?.invalid && (newCompanyForm.controls.name?.touched)">Required</em>
+            <input (ngModel)="name" name="name" required id="companyName" type="text" class="form-control"
+                   placeholder="Company Name..."/>
+        </div>
+
+        <div class="form-group"
+             [ngClass]="{'error': newCompanyForm.controls.email?.invalid && newCompanyForm.controls.email?.touched}">
+            <label for="companyEmail">Email:</label>
+            <em *ngIf="newCompanyForm.controls.email?.invalid && (newCompanyForm.controls.email?.touched)">Required</em>
+            <input (ngModel)="email" name="email" required id="companyEmail" type="text" class="form-control"
+                   placeholder="format (mm/dd/yyyy)..."/>
+        </div>
+
+        <div class="form-group"
+             [ngClass]="{'error': newCompanyForm.controls.motto?.invalid && newCompanyForm.controls.motto?.touched}">
+            <label for="motto">Your Motto:</label>
+            <em *ngIf="newCompanyForm.controls.motto?.invalid && (newCompanyForm.controls.motto?.touched)">Required</em>
+            <input (ngModel)="motto" name="motto" required id="motto" type="text" class="form-control"
+                   placeholder="One Phrase..."/>
+        </div>
+
+        <div class="form-group"
+             [ngClass]="{'error': newCompanyForm.controls.password?.invalid && newCompanyForm.controls.password?.touched}">
+            <label for="password">Password:</label>
+            <em *ngIf="newCompanyForm.controls.password?.invalid && (newCompanyForm.controls.password?.touched)">Required</em>
+            <input (ngModel)="password" name="password" required id="password" type="text" type="text"
+                   class="form-control" placeholder="Choose PassWord..."/>
+        </div>
+
+        <div class="form-group">
+            <label for="linkedin">Linked'in:</label>
+            <input (ngModel)="linkedin" name="linkedin" id="linkedin" type="text" class="form-control"
+                   placeholder="Your Linked'in..."/>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" [disabled]="newCompanyForm.invalid" class="btn btn-default" (click)="cancel()">
+            Cancel
+        </button>
+    </form>
+</div>
+
+
