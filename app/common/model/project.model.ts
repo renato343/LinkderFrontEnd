@@ -1,5 +1,6 @@
 import {Language} from "./language.model";
 import {Framework} from "./framework.model";
+import {Company} from "./company.model";
 
 export interface Project {
 
@@ -8,6 +9,7 @@ export interface Project {
     motto: string,
     languages: Language[];
     frameworks: Framework[];
+    company: Company;
 
 
 }
