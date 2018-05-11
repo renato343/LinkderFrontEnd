@@ -9,7 +9,10 @@ export class AuthService {
     constructor(private http: Http) {
     }
 
-    currentUser: User
+    currentUser: User;
+
+    // server = "http://localhost:9090/";
+    server = "http://192.168.1.75:9090/";
 
     loginCandidate(userName: string, password: string) {
 
@@ -17,7 +20,7 @@ export class AuthService {
         let options = new RequestOptions({headers: headers});
         let user = {email: userName, password: password};
 
-        return this.http.post('http://localhost:9090/candidate/auth', JSON.stringify(user), options).do(resp => {
+        return this.http.post(this.server + 'candidate/auth', JSON.stringify(user), options).do(resp => {
 
             if (resp) {
 
@@ -37,7 +40,7 @@ export class AuthService {
         let user = {email: userName, password: password};
 
 
-        return this.http.post('http://localhost:9090/company/auth', JSON.stringify(user), options).do(resp => {
+        return this.http.post(this.server + 'company/auth', JSON.stringify(user), options).do(resp => {
 
             if (resp) {
 
@@ -59,7 +62,7 @@ export class AuthService {
         let headers = new Headers({'Content-Type': 'application/json'});
         let options = new RequestOptions({headers: headers});
 
-        return this.http.post('http://localhost:9090/' + add + '/logout', JSON.stringify({}), options);
+        return this.http.post(this.server + add + '/logout', JSON.stringify({}), options);
     }
 
     isAuthenticated() {
@@ -73,6 +76,7 @@ export class AuthService {
     isCandidate(){
         return this.currentUser.isCandidate;
     }
+
     checkAuthenticationStatus() {
 
     }

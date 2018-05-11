@@ -9,12 +9,16 @@ import {Framework} from "../../common/model/framework.model";
 @Injectable()
 export class CandidateService {
 
+
+    // server = "http://localhost:9090/";
+    server = "http://192.168.1.75:9090/";
+
     constructor(private http: Http) {
     }
 
     getCandidates(): Observable<Candidate[]> {
 
-        return this.http.get("http://localhost:9090/candidate/allCandidates").map((response: Response) => {
+        return this.http.get(this.server + "candidate/allCandidates").map((response: Response) => {
 
             return <Candidate[]> response.json();
         }).catch(this.handleError);
@@ -22,7 +26,7 @@ export class CandidateService {
 
     getCandidate(id: number): Observable<Candidate> {
 
-        return this.http.get("http://localhost:9090/candidate/id?id=" + id).map((response: Response) => {
+        return this.http.get(this.server + "candidate/id?id=" + id).map((response: Response) => {
             return <Candidate> response.json();
         }).catch(this.handleError);
     }
@@ -38,14 +42,14 @@ export class CandidateService {
 
     getLanguages(): Observable<Language[]> {
 
-        return this.http.get("http://localhost:9090/candidate/allLanguages").map((response: Response) => {
+        return this.http.get(this.server + "candidate/allLanguages").map((response: Response) => {
             return <Language[]> response.json();
         }).catch(this.handleError);
     }
 
     getFrameworks(): Observable<Framework[]> {
 
-        return this.http.get("http://localhost:9090/candidate/allFrameworks").map((response: Response) => {
+        return this.http.get(this.server + "candidate/allFrameworks").map((response: Response) => {
             return <Framework[]> response.json();
         }).catch(this.handleError);
     }

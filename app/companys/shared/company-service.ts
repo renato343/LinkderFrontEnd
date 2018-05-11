@@ -10,13 +10,16 @@ import {Framework} from "../../common/model/framework.model";
 @Injectable()
 export class CompanyService {
 
+    // server = "http://localhost:9090/";
+    server = "http://192.168.1.75:9090/";
+
     constructor(private http: Http,
                 private authService: AuthService) {
     }
 
     getcompanys(): Observable<Company[]> {
 
-        return this.http.get("http://localhost:9090/company/allCompanies").map((response: Response) => {
+        return this.http.get(this.server + "company/allCompanies").map((response: Response) => {
             return <Company[]> response.json();
 
         }).catch(this.handleError);
@@ -24,7 +27,7 @@ export class CompanyService {
 
     getcompany(id: number): Observable<Company> {
 
-        return this.http.get("http://localhost:9090/company/id?id=" + id).map((response: Response) => {
+        return this.http.get(this.server + "company/id?id=" + id).map((response: Response) => {
             return <Company> response.json();
         }).catch(this.handleError);
     }
@@ -34,7 +37,7 @@ export class CompanyService {
         let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});
 
-        return this.http.post("http://localhost:9090/company/addCompany", JSON.stringify(formvalues), options)
+        return this.http.post(this.server + "company/addCompany", JSON.stringify(formvalues), options)
     }
 
     matchCompany(company: Company){
@@ -43,12 +46,12 @@ export class CompanyService {
         let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});
 
-        return this.http.post("http://localhost:9090/candidate/match", JSON.stringify(company), options)
+        return this.http.post(this.server + "candidate/match", JSON.stringify(company), options)
     }
 
     getProjects(): Observable<Project[]>{
 
-        return this.http.get("http://localhost:9090/company/allProjects").map((response: Response) => {
+        return this.http.get(this.server + "company/allProjects").map((response: Response) => {
             return <Project[]> response.json();
 
         }).catch(this.handleError);
@@ -56,7 +59,7 @@ export class CompanyService {
 
     getProject(id: number) : Observable<Project> {
 
-        return this.http.get("http://localhost:9090/company/id?id=" + id).map((resp: Response) => {
+        return this.http.get(this.server + "company/id?id=" + id).map((resp: Response) => {
             return <Project> resp.json();
         }).catch(this.handleError);
 
@@ -64,14 +67,14 @@ export class CompanyService {
 
     getLanguages(): Observable<Language[]> {
 
-        return this.http.get("http://localhost:9090/company/allLanguages").map((response: Response) => {
+        return this.http.get(this.server + "company/allLanguages").map((response: Response) => {
             return <Language[]> response.json();
         }).catch(this.handleError);
     }
 
     getFrameworks(): Observable<Framework[]> {
 
-        return this.http.get("http://localhost:9090/company/allFrameworks").map((response: Response) => {
+        return this.http.get(this.server + "company/allFrameworks").map((response: Response) => {
             return <Framework[]> response.json();
         }).catch(this.handleError);
     }
