@@ -4,8 +4,8 @@ import {Company} from "./company.model";
 
 export interface Project {
 
+    project_id: number,
     name: string;
-    projectId: string,
     motto: string,
     languages: Language[];
     frameworks: Framework[];

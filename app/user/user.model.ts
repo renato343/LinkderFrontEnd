@@ -1,6 +1,6 @@
 export interface User{
 
-    id:number,
+    candidate_Id:number,
     name: string,
     email: string,
     motto: string,

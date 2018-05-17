@@ -10,8 +10,8 @@ import {Framework} from "../../common/model/framework.model";
 @Injectable()
 export class CompanyService {
 
-    // server = "http://localhost:9090/";
-    server = "http://192.168.1.75:9090/";
+    server = "http://localhost:9090/";
+    //server = "http://192.168.1.75:9090/";
 
     constructor(private http: Http,
                 private authService: AuthService) {

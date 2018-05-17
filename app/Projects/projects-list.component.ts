@@ -1,7 +1,9 @@
 import {Component, OnInit} from "@angular/core";
 import {Project} from "../common/model/project.model";
 import {ActivatedRoute} from "@angular/router";
-import {CompanyService} from "../companys/shared/company-service";
+import {AuthService} from "../user/auth.service";
+import {MitchModel} from "../common/model/mitch.model";
+import {CandidateService} from "../candidates/shared";
 
 @Component({
     template: `
@@ -30,15 +32,24 @@ export class ProjectsListComponent implements OnInit{
     projects: Project[];
 
     constructor(private route: ActivatedRoute,
-                private companyService: CompanyService) {
+                private authService: AuthService,
+                private candidateService: CandidateService) {
     }
 
     ngOnInit() {
         this.projects = this.route.snapshot.data['projects'];
-        console.log(this.projects);
     }
 
     match() {
+
+        let mitch: MitchModel;
+
+        mitch.candidate_id = this.authService.currentUser.candidate_Id;
+        mitch.candidate_bol= true;
+        mitch.project_id = this.projects[this.index].project_id;
+        mitch.project_bol = false;
+
+        this.candidateService.mitch(mitch);
 
     }
 
@@ -50,5 +61,4 @@ export class ProjectsListComponent implements OnInit{
             this.index++;
         }
     }
-
 }

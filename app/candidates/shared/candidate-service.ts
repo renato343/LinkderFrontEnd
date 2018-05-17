@@ -4,14 +4,14 @@ import {Observable} from 'rxjs/Rx';
 import {Candidate} from "../../common/model/candidate.model";
 import {Language} from "../../common/model/language.model";
 import {Framework} from "../../common/model/framework.model";
-
+import {MitchModel} from "../../common/model/mitch.model";
 
 @Injectable()
 export class CandidateService {
 
 
-    // server = "http://localhost:9090/";
-    server = "http://192.168.1.75:9090/";
+    server = "http://localhost:9090/";
+    //server = "http://192.168.1.75:9090/";
 
     constructor(private http: Http) {
     }
@@ -36,7 +36,7 @@ export class CandidateService {
         let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});
 
-        return this.http.post("http://localhost:9090/candidate/addCandidate", JSON.stringify(formvalues), options)
+        return this.http.post("http://localhost:9090/match/addMatch", JSON.stringify(formvalues), options)
 
     }
 
@@ -52,6 +52,17 @@ export class CandidateService {
         return this.http.get(this.server + "candidate/allFrameworks").map((response: Response) => {
             return <Framework[]> response.json();
         }).catch(this.handleError);
+    }
+
+    mitch(mitch: MitchModel){
+
+        let headers = new Headers({'Content-type': 'application/json'});
+        let options = new RequestOptions({headers: headers});
+
+        return this.http.post("http://localhost:9090/match/addMatch",
+            JSON.stringify(mitch), options).do(res=>{
+            console.log(res);
+            });
     }
 
     private handleError(error: Response) {

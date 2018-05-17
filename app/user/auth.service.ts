@@ -11,8 +11,8 @@ export class AuthService {
 
     currentUser: User;
 
-    // server = "http://localhost:9090/";
-    server = "http://192.168.1.75:9090/";
+    server = "http://localhost:9090/";
+    //server = "http://192.168.1.75:9090/";
 
     loginCandidate(userName: string, password: string) {
 
