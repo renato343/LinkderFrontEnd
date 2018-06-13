@@ -3,10 +3,11 @@ import {Project} from "../common/model/project.model";
 import {ActivatedRoute} from "@angular/router";
 import {AuthService} from "../user/auth.service";
 import {MitchModel} from "../common/model/mitch.model";
-import {CandidateService} from "../candidates/shared";
+import {CandidateService} from "../candidates/shared/candidate-service";
+
 
 @Component({
-    template: `
+    template: ` 
         <div>
             <h1>PROJECTS</h1>
             <hr>
@@ -33,7 +34,8 @@ export class ProjectsListComponent implements OnInit{
 
     constructor(private route: ActivatedRoute,
                 private authService: AuthService,
-                private candidateService: CandidateService) {
+                private candidateService: CandidateService)
+                 {
     }
 
     ngOnInit() {
@@ -41,16 +43,15 @@ export class ProjectsListComponent implements OnInit{
     }
 
     match() {
+        let mitch = {
 
-        let mitch: MitchModel;
-
-        mitch.candidate_id = this.authService.currentUser.candidate_Id;
-        mitch.candidate_bol= true;
-        mitch.project_id = this.projects[this.index].project_id;
-        mitch.project_bol = false;
+            candidate_id : this.authService.currentUser.candidate_Id,
+            candidate_bol : true,
+            project_id : this.projects[this.index].project_id,
+            project_bol : false
+        };
 
         this.candidateService.mitch(mitch);
-
     }
 
     next() {

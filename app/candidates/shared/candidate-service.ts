@@ -36,7 +36,7 @@ export class CandidateService {
         let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});
 
-        return this.http.post("http://localhost:9090/match/addMatch", JSON.stringify(formvalues), options)
+        return this.http.post("http://localhost:9090/candidate/addCandidate", JSON.stringify(formvalues), options)
 
     }
 
@@ -54,15 +54,18 @@ export class CandidateService {
         }).catch(this.handleError);
     }
 
-    mitch(mitch: MitchModel){
+    mitch(mitch: MitchModel) {
 
         let headers = new Headers({'Content-type': 'application/json'});
         let options = new RequestOptions({headers: headers});
 
-        return this.http.post("http://localhost:9090/match/addMatch",
-            JSON.stringify(mitch), options).do(res=>{
-            console.log(res);
-            });
+        this.http.post(this.server + "/match/addMatch", JSON.stringify(mitch), options).subscribe(data =>{
+
+            console.log(data);
+
+
+        })
+
     }
 
     private handleError(error: Response) {
